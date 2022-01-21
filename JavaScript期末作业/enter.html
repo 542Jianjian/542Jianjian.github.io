@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/enter.css">
+    <title>Document</title>
+</head>
+<body background="NCimg/背景1.jpg"   
+    style="background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;">
+    <div class="box">
+
+
+        <form action="index.html">
+
+            <h4>用户登录中心</h4>
+            <div class="acc">
+                <input type="text" placeholder="请输入用户名" id="root">
+                <input type="password" placeholder="请输入密码" id="pwd">
+            </div>
+            <a href="javascript:;" class="btn fff" id="yz"> 点击验证</a>
+
+            <div class="fn">
+                <label for="check"> <input id="check" type="checkbox"> <span><span>记住我</span></span> </label>
+                <a href="javascript:;" class="ccc">忘记密码</a>
+            </div>
+
+            <div class="login">
+                <input type="submit" value="登录" class="fff">
+                <span>或</span>
+                <a href="javascript:;" class="fff">使用其他登录</a>
+            </div>
+            <div class="reg">
+                <p>还没有账号？<a href="javascript:;" class="ccc">立即注册</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+
+        //通过DOM获取元素，来实现登录
+        var root = document.getElementById('root').value;
+        var pwd = document.getElementById('pwd').value;
+        var yz = document.getElementById('yz');
+        yz.onblur = function(){
+            if(root=="jianjian" && pwd=="123123"){
+                alert("密码错误，登录失败");
+            }else{
+                alert("密码正确，登录成功!");
+            }
+        }
+
+
+    </script>
+</body>
+</html>

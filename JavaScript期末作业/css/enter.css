@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-style: 18px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 0.8rem;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box form{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 13%;
+}
+.box form h4{
+    color: #eee;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box form .acc input,
+.box form .btn{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 20%);
+    border: none;
+    border-radius: 2.5rem;
+    text-indent: 1rem;
+}
+.box form .btn{
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: transparent;
+}
+.box form .acc input::placeholder{
+    color: #bbb;
+}
+.box form .acc input:hover{
+    background-color: rgba(0, 0, 0, 30%);
+}
+.box form .acc input:focus{
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.fn,.login{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.login a,.login input{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 1px solid #eee;
+    border-radius: 2.5rem;
+    margin: 0.5rem 0;
+    color: #eee;
+    background-color: transparent;
+    text-align: center;
+}
+.login a{
+    width: 40%;
+}
+.login input{
+    width: 60%;
+}
+.login span{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+}
+.fn{
+    margin: 0 1rem;
+}
+.login{
+    margin: 0 2rem;
+}
+.reg{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 60%);
+}
